@@ -4,17 +4,21 @@
 
 1. Create a new **Line Messaging API Channel**.
 2. **Fork** this repository.
-3. On **your repo**, [Deploy to Heroku](https://heroku.com/deploy).
+3. On **your repo**,
+	- [Deploy to Heroku](https://heroku.com/deploy)
 	- Set **Config Vars**
-		- access_token: Line Channel access token
-		- channel_secret: Line Channel secret
+		- access_token: **Channel access token**
+		- channel_secret: **Channel secret**
 	- Deploy app
-4. Back to **Line Channel settings**, enable webhook, set **Webhook URL** to `https://your_heroku_app_url/webhook` and verify.
+4. Back to **Line Channel settings**,
+	- Enable webhook
+	- Set **Webhook URL** to `https://your_heroku_app_url/webhook` and verify.
 5. In Line Official Account Manager,
-	enable **Webhook**.
+	- Enable **Webhook**
 
 ## Webhook
 
+server.py
 ```python
 from linebot import simple_bot
 
